@@ -1,7 +1,7 @@
 import requests, base64, pprint, json, textwrap
 
 def headers():
-    auth = base64.b64encode("apidev:F1ghtwar".encode())
+    auth = base64.b64encode("<apiuser>:<apipasswd>".encode())
     headers = {"Authorization": "Basic " + auth.decode(),
                "Content-Type": "application/json"}
     return headers
